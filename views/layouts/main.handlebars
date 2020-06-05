@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Js</title>
+</head>
+<body>
+    {{>_navbar}}
+    {{#if error}}
+        <script>
+            alert('{{error}}')
+        </script>
+    {{else}}
+
+    {{/if}}
+    {{>_msg}}
+    <div class="container mt-4">
+        {{{body}}}
+    </div>
+</body>
+</html>
